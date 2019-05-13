@@ -1,0 +1,14 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+
+#przekierowanie api do odpowiedniego uchwytu
+RewriteRule ^api(/)*$ index.php [L]
+RewriteRule ^api/(.*)$ middleware/api_handler.php [L,NC]
+
+#zapytanie do okreslonego pliku lub folderu
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+ErrorDocument 404 /404.php
