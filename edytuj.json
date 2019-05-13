@@ -1,0 +1,12 @@
+{
+    "products": [
+        {
+            "product_id": 45,
+            "product_price": 3.30,
+            "product_quantity": 59,
+            "product_description_name": "Watch Casio",
+            "product_description_description": "A toy watch with an inscription 'Casio'",
+            "dict_language_code": "en"
+        }
+    ]
+}
